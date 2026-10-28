@@ -1,0 +1,3 @@
+-- Reference only. SQLAlchemy models are the source of truth for this starter.
+-- All new application tables use qsr_ prefixes to avoid colliding with legacy tables.
+-- No DROP statements are included by design.

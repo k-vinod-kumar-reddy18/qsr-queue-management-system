@@ -1,0 +1,7 @@
+# Scaffold only: select a supported NVIDIA DeepStream base image/version for the target platform.
+# Do not build this file until target GPU/Jetson, OS, driver, and SDK versions are confirmed.
+ARG DEEPSTREAM_BASE=nvidia/deepstream:7.1-triton-multiarch
+FROM ${DEEPSTREAM_BASE}
+WORKDIR /opt/qsr
+COPY configs/ ./configs/
+CMD ["bash", "-lc", "echo 'Configure and validate the DeepStream pipeline for the target hardware before use'; sleep infinity"]

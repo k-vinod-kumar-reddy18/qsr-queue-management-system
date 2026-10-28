@@ -1,0 +1,54 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+dist/
+*.db
+videos/input/*
+!videos/input/.gitkeep
+videos/processed/*
+!videos/processed/.gitkeep
+evidence/snapshots/*
+!evidence/snapshots/.gitkeep
+evidence/clips/*
+!evidence/clips/.gitkeep
+vision/models/*
+!vision/models/README.md
+!.gitkeep
+# Python environments and cache
+.venv/
+.venv311/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and local configuration
+.env
+!.env.example
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+
+# Uploaded and processed videos
+videos/input/*
+videos/processed/*
+!videos/input/.gitkeep
+!videos/processed/.gitkeep
+
+# Generated evidence and backups
+evidence/snapshots/*
+reset_backup_*/
+
+# Logs
+*.log
